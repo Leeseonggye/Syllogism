@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/home/seonggye/Syllogism-1/gpt2/main.py", line 32, in <module>
+    main()
+  File "/home/seonggye/Syllogism-1/gpt2/main.py", line 25, in main
+    train(args, model, train_dataloader, optimizer, test_dataloader)
+  File "/home/seonggye/Syllogism-1/gpt2/train_utils.py", line 26, in train
+    for (input_ids, token_type_ids, attn_mask), label  in dataloader :
+  File "/home/seonggye/anaconda3/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "/home/seonggye/anaconda3/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/seonggye/anaconda3/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/seonggye/anaconda3/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/seonggye/Syllogism-1/gpt2/data.py", line 31, in __getitem__
+    return self.__preprocess(self.prem1[idx], self.prem2[idx], self.label[idx])
+  File "/home/seonggye/Syllogism-1/gpt2/data.py", line 34, in __preprocess
+    token_ids = torch.full((1, self.max_len), fill_value = self.pad)
+TypeError: full() received an invalid combination of arguments - got (tuple, fill_value=NoneType), but expected one of:
+ * (tuple of ints size, Number fill_value, *, Tensor out, torch.dtype dtype, torch.layout layout, torch.device device, bool pin_memory, bool requires_grad)
+ * (tuple of ints size, Number fill_value, *, tuple of names names, torch.dtype dtype, torch.layout layout, torch.device device, bool pin_memory, bool requires_grad)

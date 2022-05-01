@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.4.0-105-generic-x86_64-with-glibc2.27",
+    "python": "3.9.7",
+    "heartbeatAt": "2022-04-17T13:53:59.459093",
+    "startedAt": "2022-04-17T13:53:56.319024",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/seonggye/Syllogism-1/gpt2/main.py",
+    "codePath": "gpt2/main.py",
+    "git": {
+        "remote": "https://github.com/Leeseonggye/Syllogism.git",
+        "commit": "9206c91d0c5c832a8f53b291b7aacda210214ce0"
+    },
+    "email": "tjdrp11@naver.com",
+    "root": "/home/seonggye/Syllogism-1",
+    "host": "seonggye-All-Series",
+    "username": "seonggye",
+    "executable": "/home/seonggye/anaconda3/bin/python"
+}
